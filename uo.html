@@ -317,8 +317,9 @@
         }
 
         function jump() {
-          window.location.href =
-            "https://9524250.github.io"; 
+            var currentTimestamp = new Date().getTime();
+            console.log(currentTimestamp);
+            window.location.href = "http://9524250.github.io?date="+currentTimestamp; 
         }
       </script>
     </body>

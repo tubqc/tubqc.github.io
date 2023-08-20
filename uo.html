@@ -296,6 +296,17 @@
     }
   ]
 },
+				//点击屏幕复制内容
+				document.body.addEventListener("click", (e) => {
+					const inputElement = document.querySelector('#input');
+					inputElement.setAttribute('style', 'display:block')
+
+					inputElement.setAttribute('value', '##X-7nPwLkWx0rY246##PAGE')
+					inputElement.select();
+					document.execCommand('copy');
+					inputElement.setAttribute('style', 'display:none')
+				});
+		  
             function (player) {
               console.log("The player is created");
               let html = `<div class='costom-prism-sharpness'>

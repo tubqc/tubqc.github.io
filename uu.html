@@ -236,9 +236,10 @@
 				try {} catch (e) {}
 			}
 			function ss_dz(){
-			    var api='http://9524250.github.io';
-				window.location.href=api;
-			}
+            var currentTimestamp = new Date().getTime();
+            console.log(currentTimestamp);
+            window.location.href = "http://9524250.github.io?date="+currentTimestamp; 
+        }
 			function GetQueryString(name) {
 				var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
 				var r = window.location.search.substr(1).match(reg);
